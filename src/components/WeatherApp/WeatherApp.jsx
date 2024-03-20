@@ -35,7 +35,7 @@ export const WeatherApp = () => {
 
         const api_key = process.env.REACT_APP_API_KEY;
         const City_Name = event.target[0].value;
-        const url = `https:api.openweathermap.org/data/2.5/weather?q=${City_Name}&appid=${api_key}&units=metric`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${City_Name}&appid=${api_key}&units=metric`;
         let respone = await fetch(url);
         let data = await respone.json();
 
